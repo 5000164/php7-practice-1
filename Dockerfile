@@ -16,4 +16,4 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 
 COPY php.ini /usr/local/etc/php/php.ini
 
-CMD tail -f /dev/null
+CMD php -S 0.0.0.0:80 -t /var/www/
