@@ -1,4 +1,4 @@
-FROM php:7.1-cli
+FROM php:7.3.0beta2-cli-stretch
 
 RUN apt-get update \
 && apt-get -y upgrade \
