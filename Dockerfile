@@ -1,4 +1,4 @@
-FROM php:7.3.0beta2-cli-stretch
+FROM php:7.2.9-cli
 
 RUN apt-get update \
 && apt-get -y upgrade \
@@ -6,7 +6,7 @@ RUN apt-get update \
     git \
     zip \
     unzip \
-&& pecl install xdebug-2.5.5 \
+&& pecl install xdebug-2.6.1 \
 && docker-php-ext-enable xdebug
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
