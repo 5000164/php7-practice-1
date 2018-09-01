@@ -1,7 +1,8 @@
 version: '3'
 services:
   php:
-    build: .
+    build:
+      context: ./docker/php
     container_name: php
     expose:
       - "80"
