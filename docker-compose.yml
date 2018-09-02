@@ -4,8 +4,6 @@ services:
     build:
       context: ./docker/php
     container_name: php
-    expose:
-      - "80"
     ports:
       - "8080:80"
     volumes:
