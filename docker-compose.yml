@@ -1,11 +1,15 @@
-version: '3'
+version: "3"
 services:
-  php:
+
+  db:
     build:
-      context: ./docker/php
-    container_name: php
-    expose:
-      - "80"
+      context: ./docker/db
+    ports:
+      - "3306:3306"
+
+  app:
+    build:
+      context: ./docker/app
     ports:
       - "8080:80"
     volumes:
