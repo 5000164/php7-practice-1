@@ -5,5 +5,5 @@
 ```bash
 docker run --rm --interactive --tty \
     --volume $PWD:/app \
-    composer install
+    composer:1.7.2 install
 ```
