@@ -6,6 +6,7 @@
     },
     "require": {
         "php": "^7.2",
+        "ext-mysqli": "*",
         "robmorgan/phinx": "^0.10.6"
     },
     "require-dev": {
