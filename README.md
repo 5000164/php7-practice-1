@@ -2,12 +2,19 @@
 
 ## ライブラリ
 
+
+### 準備
+
+```bash
+docker build -t composer ./docker/composer
+```
+
 ### インストール
 
 ```bash
 docker run --rm --interactive --tty \
     --volume $PWD:/app \
-    composer:1.7.2 install
+    composer install
 ```
 
 ### 追加
@@ -15,7 +22,15 @@ docker run --rm --interactive --tty \
 ```bash
 docker run --rm --interactive --tty \
     --volume $PWD:/app \
-    composer:1.7.2 require php:^7.2
+    composer require php:^7.2
+```
+
+### アップデート
+
+```bash
+docker run --rm --interactive --tty \
+    --volume $PWD:/app \
+    composer update
 ```
 
 ## DB マイグレート
