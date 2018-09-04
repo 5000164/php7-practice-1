@@ -1,11 +1,21 @@
 # php7-practice-1
 
-## ライブラリインストール
+## ライブラリ
+
+### インストール
 
 ```bash
 docker run --rm --interactive --tty \
     --volume $PWD:/app \
     composer:1.7.2 install
+```
+
+### 追加
+
+```bash
+docker run --rm --interactive --tty \
+    --volume $PWD:/app \
+    composer:1.7.2 require php:^7.2
 ```
 
 ## DB マイグレート
