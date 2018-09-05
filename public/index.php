@@ -1,3 +1,6 @@
 <?php
+require __DIR__ . '/../vendor/autoload.php';
 
-echo 'test';
+use App\Controllers\Index;
+
+(new Index())->execute();
