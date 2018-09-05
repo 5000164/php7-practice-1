@@ -1,10 +1,12 @@
 {
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "src/"
         }
     },
     "require": {
+        "php": "^7.2",
+        "ext-mysqli": "*",
         "robmorgan/phinx": "^0.10.6"
     },
     "require-dev": {

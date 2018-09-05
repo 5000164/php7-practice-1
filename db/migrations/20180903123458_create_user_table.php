@@ -8,8 +8,9 @@ class CreateUserTable extends AbstractMigration
     {
         $q = <<<'EOF'
 CREATE TABLE user (
-  id INT,
-  name VARCHAR(255)
+  id MEDIUMINT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id)
 );
 EOF;
         $this->execute($q);
